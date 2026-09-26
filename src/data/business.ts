@@ -1,6 +1,8 @@
 export const img = (id: string, w = 1200) =>
   `https://images.unsplash.com/photo-${id}?auto=format&fit=crop&w=${w}&q=80`
 
+const localPhoto = (name: string) => `/images/jonrandos/${name}.webp`
+
 export const business = {
   name: 'Jonrandos Food Arena',
   shortName: 'Jonrandos',
@@ -40,18 +42,18 @@ export const whatsappLink = (message: string) =>
   `https://wa.me/${business.whatsapp}?text=${encodeURIComponent(message)}`
 
 export const photos = {
-  hero: img('1598103442097-8b74394b95c6', 1400),
-  about: img('1604908176997-125f25cc6f3d', 1000),
-  aboutSmall: img('1567620832903-9fc6debc209f', 600),
+  hero: localPhoto('mixed-meat-grill'),
+  about: localPhoto('outdoor-seating-wide'),
+  aboutSmall: localPhoto('chicken-on-grill'),
 }
 
 export const gallery = [
-  { src: img('1626082927389-6cd097cdc6ec', 900), alt: 'Crispy fried chicken' },
-  { src: img('1532550907401-a500c9a57435', 900), alt: 'Grilled chicken plate' },
-  { src: img('1527477396000-e27163b481c2', 900), alt: 'Saucy chicken wings' },
-  { src: img('1544025162-d76694265947', 900), alt: 'Flame-grilled platter' },
-  { src: img('1573080496219-bb080dd4f877', 900), alt: 'Golden chips' },
-  { src: img('1568901346375-23c9450c58cd', 900), alt: 'Loaded burger' },
-  { src: img('1578985545062-69928b1d9587', 900), alt: 'Chocolate cake' },
-  { src: img('1562967914-608f82629710', 900), alt: 'Chicken bucket' },
+  { src: localPhoto('mixed-meat-grill'), alt: 'Chicken and meat cooking over the braai' },
+  { src: localPhoto('food-tripe-platter'), alt: 'A generous grilled offal and meat platter' },
+  { src: localPhoto('chicken-on-grill'), alt: 'Chicken grilling fresh over the coals' },
+  { src: localPhoto('outdoor-seating-wide'), alt: 'Jonrandos outdoor dining area' },
+  { src: localPhoto('ribs-and-pap'), alt: 'Grilled ribs served with pap and gravy' },
+  { src: localPhoto('morogo-on-grill'), alt: 'Morogo cooking beside the braai' },
+  { src: localPhoto('outdoor-seating-close'), alt: 'Wooden tables at the Arena' },
+  { src: localPhoto('outdoor-seating-night'), alt: 'The Arena seating area at night' },
 ]

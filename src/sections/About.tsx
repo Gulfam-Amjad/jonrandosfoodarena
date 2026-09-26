@@ -27,14 +27,24 @@ export default function About() {
             style={{ y: y1 }}
             className="absolute top-0 left-0 h-[80%] w-[75%] overflow-hidden rounded-[2rem] border border-white/10"
           >
-            <img src={photos.about} alt="Grilled chicken" loading="lazy" className="h-full w-full object-cover" />
+            <img
+              src={photos.about}
+              alt="Jonrandos outdoor dining area"
+              loading="lazy"
+              className="h-full w-full object-cover object-center"
+            />
             <div className="absolute inset-0 bg-gradient-to-t from-coal-950/70 to-transparent" />
           </motion.div>
           <motion.div
             style={{ y: y2 }}
             className="absolute right-0 bottom-0 h-[50%] w-[52%] overflow-hidden rounded-[2rem] border-4 border-coal-950 shadow-2xl"
           >
-            <img src={photos.aboutSmall} alt="Chicken wings" loading="lazy" className="h-full w-full object-cover" />
+            <img
+              src={photos.aboutSmall}
+              alt="Chicken grilling over the coals at Jonrandos"
+              loading="lazy"
+              className="h-full w-full object-cover object-center"
+            />
           </motion.div>
           <motion.div
             initial={{ scale: 0, rotate: -30 }}

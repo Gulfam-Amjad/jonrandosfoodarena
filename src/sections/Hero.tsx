@@ -120,9 +120,9 @@ export default function Hero() {
           <div className="absolute inset-12 overflow-hidden rounded-full border-4 border-coal-800 shadow-2xl shadow-black/60">
             <motion.img
               src={photos.hero}
-              alt="Flame-grilled chicken at Jonrandos"
+              alt="Golden flame-grilled chicken on the Jonrandos braai"
               style={{ y: imgY, scale: imgScale }}
-              className="h-full w-full object-cover"
+              className="h-full w-full object-cover object-[center_72%]"
               fetchPriority="high"
             />
           </div>

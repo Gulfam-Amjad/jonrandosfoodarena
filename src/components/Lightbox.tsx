@@ -39,7 +39,7 @@ export default function Lightbox({ images, index, onChange }: Props) {
           <AnimatePresence mode="wait">
             <motion.img
               key={index}
-              src={images[index].src.replace('w=900', 'w=1800')}
+              src={images[index].src}
               alt={images[index].alt}
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
